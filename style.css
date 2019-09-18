@@ -1,16 +1,34 @@
-@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
-
 .topnav {
   overflow: hidden;
   background-color: #333;
+  display: block;
 }
 
 .center {
-  display: block;
-  margin-left: auto ;
+  margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 26px 7%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #008080;
+  color: white;
+}
 
 body, html {
     height: 100%;
@@ -20,7 +38,7 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/New_campus_of_Wakatipu_High_School.jpg/1200px-New_campus_of_Wakatipu_High_School.jpg");
-  height: 85.6%;
+  height: 86.4%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,19 +53,16 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
   font: Merriweather;
+  text-shadow: 2px 2px #333;
+}
+.hero-text h2 {
+  font-size: 40px;
+}
 
+.hero-text p {
+  font-size: 28px;
 }
-.block {
-  display: block;
-  width: 70%;
-  border: none;
-  background-color: #ffc71f;
-  padding: 14px 28px;
-  font-size: 16px;
-  text-align: center;
-  margin: 0 auto;
-  border-radius:
-}
+
 .block {
     @extends $btn__inactive
     @extends $animate
@@ -66,30 +81,147 @@ body, html {
     transition:800ms ease all;
     outline:none;
     }
-    button:hover{
-      background:#170069;
-      color:#ffc71f;
-    }
+button:hover{
+  background:#170069;
+  color:#ffc71f;
+}
 
-    button:before,button:after{
-      content:'';
-      position:absolute;
-      top:0;
-      right:0;
-      height:2px;
-      width:0;
-      background: #ffc71f;
-      transition:800ms ease all;
-    }
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ffc71f;
+  transition:800ms ease all;
+}
 
-    button:after{
-      right:inherit;
-      top:inherit;
-      left:0;
-      bottom:0;
-    }
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
 
-    button:hover:before,button:hover:after{
-      width:100%;
-      transition:800ms ease all;
-    }
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* NOTE:Home.html page part of css  */
+.navcentre {
+  margin-right: 5px;
+  float: left;
+  display: block;
+}
+
+.hero-image-home {
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url("img/school.jpg");
+  height: 88%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.title {
+  color: #002a5c;
+  text-align: center;
+  font-size: 100%;
+  font: Merriweather;
+}
+
+.img-gallery {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.img-gallery img {
+  width: 20%;
+  height: 15%;
+}
+
+.segment {
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url(img/hall.png);
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 40px 0;
+  padding-top: 300px;
+  background-attachment: fixed;
+  text-shadow: 2px 2px #333;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 300px;
+  font: Merriweather;
+}
+
+.segment-about {
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url(img/learning.jpg);
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 40px 0;
+  padding-top: 300px;
+  background-attachment: fixed;
+  text-shadow: 2px 2px #333;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 300px;
+  font: Merriweather;
+}
+
+
+.segment-contact {
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url(img/byod.jpg);
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 40px 0;
+  padding-top: 300px;
+  background-attachment: fixed;
+  text-shadow: 2px 2px #333;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 300px;
+  font: Merriweather;
+}
+
+
+.akonga {
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url(img/akonga.png);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  resize: 50%;
+  margin: 20px auto;
+  max-width: 1200px;
+  width: 55%;
+}
+
+
+.textblock {
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 70%;
+  line-height: 150%;
+  text-align: center;
+}
+
+.text {
+ color: #002a5c;
+}
+
+.link {
+  color: #008080;
+}
