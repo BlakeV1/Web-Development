@@ -63,6 +63,7 @@ body, html {
   font-size: 28px;
 }
 
+<!--
 .block {
     @extends $btn__inactive
     @extends $animate
@@ -117,7 +118,7 @@ button:hover:before,button:hover:after{
 }
 
 .hero-image-home {
-  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url("img/school.jpg");
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 10, 0, 0.5)), url("img/School.jpg");
   height: 88%;
   background-position: center;
   background-repeat: no-repeat;
